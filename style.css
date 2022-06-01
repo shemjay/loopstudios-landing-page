@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Alata', sans-serif; 
+    font-family: 'Alata', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -26,16 +26,16 @@
 }
 
 .navbar {
-    font-family: 'Josefin Sans', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 7em;
 }
 
 .navbar li {
     list-style-type: none;
     display: inline-block;
-    margin: 5em 2em 0em 2em;
+    margin: 3.5em 0em 0em 2em;
 }
 
 .navbar a {
@@ -45,18 +45,17 @@
 }
 
 .hero-logo {
-    margin: 5.5em 0em 0em 10em;
+    margin: 3em 0em 0em 10em;
 }
 
 .hero-content {
+    text-transform: uppercase;
     color: hsl(0, 0%, 100%);
     display: flex;
     align-items: center;
-    font-family: 'Josefin sans', sans-serif;
-    font-weight: Light 300;
-    font-size: 2.25rem;
+    font-size: 3.5rem;
     border: 2px solid hsl(0, 0%, 100%);
-    width: 35%;
-    padding: 1em;
-    margin: 2em 0em 0em 4em; 
+    width: 45%;
+    padding: .5em 1.5em .5em 1em;
+    margin: 2.5em 0em 0em 3em; 
 }
