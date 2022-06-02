@@ -1,6 +1,3 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
 * {
@@ -12,7 +9,6 @@
 }
 
 .wrapper {
-    overflow: hidden;
     height: 100vh;
     width: 100%;
 }
@@ -59,3 +55,65 @@
     padding: .5em 1.5em .5em 1em;
     margin: 2.5em 0em 0em 3em; 
 }
+
+/* first section background sytles */
+.second-section {
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section-image {
+    position: absolute;
+    top: 7em;
+    left: 10em;
+    width: 50%;
+}
+
+.section-image img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    z-index: 2;
+    top: 42%;
+    right: 10%;
+}
+
+.section-content p {
+    font-weight: lighter;
+    margin-top: 1em;
+    font-size: .75rem;
+}
+
+.section-content h1 {
+    font-weight: 2rem; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
