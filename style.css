@@ -112,20 +112,25 @@
 .second-section {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
-#section-copy {
+.section-copy {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    height: 30%;
+    width: 100%;
 }
 
-#section-copy button {
-    align-self: flex-end;
-    justify-self: space-betweeen;
+.section-copy button {
+    align-self: flex-start;
+    justify-self: center;
 }
 
 .grid-display {
     display: grid;
+    padding: 4em;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 1em;
@@ -154,6 +159,12 @@
     font-weight: 400;
     font-size: 1.75rem;
     padding: 1em;
+}
+
+.section-text {
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 
