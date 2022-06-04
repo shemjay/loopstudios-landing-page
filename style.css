@@ -112,26 +112,37 @@
 .second-section {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
 .section-copy {
+    text-transform: uppercase;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 30%;
     width: 100%;
+    font-size: 1.5rem;
+    padding: 4em 0em 4em 2em;
 }
 
 .section-copy button {
-    align-self: flex-start;
-    justify-self: center;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 0%);
+    margin-right: 16em;
+    padding: 1em 3em 1em 3em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.section-copy h1 {
+    margin-left: 3em;
 }
 
 .grid-display {
     display: grid;
-    padding: 4em;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 250px);
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
