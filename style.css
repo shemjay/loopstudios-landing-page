@@ -178,6 +178,58 @@
     font-weight: 400;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color:hsl(0, 0%, 0%);
+    margin-top: 10em;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-list li {
+    padding-right: 1em;
+    padding-bottom: 1.5em;
+    list-style-type: none;
+}
+
+.footer-list a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+}
+
+.footer-nav {
+    height: 100%;
+    width: 25%;
+    margin-left: 9em;
+}
+
+.footer-img {
+    height: 100%;
+    width: 100%;
+    padding: 2em 0em 2em 0em;
+    object-fit: contain;
+}
+
+.footer-icons {
+    color: hsl(0, 0%, 100%);
+    margin-right: 9em;
+}
+
+.footer-icons img {
+    margin: 2em 0em 2.5em 1.5em;
+}
+
+.footer-icons p {
+    color:  hsl(0, 0%, 55%);
+    font-size: .75rem;
+}
+
+
 
 
 
