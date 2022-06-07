@@ -35,9 +35,32 @@
 }
 
 .navbar a {
+    font-weight: bold;
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     font-size: 1rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -10px;
+    left: 10px;
+    background-color: hsl(0, 0%, 100%);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .hero-logo {
@@ -141,6 +164,11 @@
     text-transform: uppercase;
 }
 
+.section-copy button:hover {
+    background-color:  hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
 .section-copy h1 {
     margin-left: 3em;
 }
@@ -197,9 +225,11 @@
 
 .footer-list li {
     padding-right: 1em;
-    padding-bottom: 1.5em;
+    padding-bottom: 2.5em;
     list-style-type: none;
 }
+
+
 
 .footer-list a {
     text-decoration: none;
@@ -244,5 +274,11 @@
 
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
