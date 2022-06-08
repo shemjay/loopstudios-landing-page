@@ -181,12 +181,6 @@
     grid-row-gap: 1em;
 }
 
-.grid-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
 .grid-img {
     position: relative;
     display: flex;
@@ -195,9 +189,26 @@
     flex-direction: row;
 }
 
+.grid-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.grid-img:hover img {
+    transition: 0.2s ease-in-out;
+    opacity: .3;
+    background-color: hsl(0, 0%, 55%);
+}
+
+.grid-img:hover p {
+    transition: 0.2s ease-in-out;
+    color: hsl(0, 0%, 0%);
+}
+
 .grid-text {
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     color: white;
     text-transform: uppercase;
     font-weight: 400;
